@@ -8,7 +8,7 @@ import {
 
 export type SpeedOptionsScope = 'global' | 'site';
 
-function parseSpeedValue(value: unknown): number | null {
+export function parseSpeedValue(value: unknown): number | null {
   if (typeof value === 'number' && Number.isFinite(value) && value > 0) {
     return value;
   }
